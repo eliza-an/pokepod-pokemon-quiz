@@ -10,7 +10,7 @@ var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
     url: queryURL,
     method: "GET"
     }).then(function(response) {
-    console.log(response);
+    // console.log(response);
     let pokemon = response.name;
 
     let pPokemon = $("<p>")
@@ -43,15 +43,15 @@ pokemonSearch();
 
 function gifSearch() {
     queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-    pokemon + "&api_key=KHQPUaPoLV1yN6ACsLvxGo4GGtPpy8XF&limit=10"
+    pokemon + "&api_key=KHQPUaPoLV1yN6ACsLvxGo4GGtPpy8XF"
 
     $.ajax({
         url: queryURL,
         method: "GET"
         }).then(function(response) {
         console.log(response);
-        console.log(response.data[0].url);
-        let gifURL = response.data[0].url;
+        console.log(response.data[0].embed_url);
+        let gifURL = response.data[0].embed_url;
 
         gifTag.attr("src", gifURL);
         displayDiv.append(gifTag);
