@@ -1,3 +1,9 @@
 .results{
     color:black
 }
+
+body {
+    background: url("./images/pokebig.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+}
