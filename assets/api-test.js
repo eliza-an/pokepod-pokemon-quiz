@@ -1,6 +1,6 @@
 var pokemon = "bulbasaur"; //takes att of THIS element
 const displayDiv = $("<div>") 
-const gifTag = $("<img>")
+
 $("body").append(displayDiv);
 
 
@@ -40,7 +40,7 @@ var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
 pokemonSearch();
 
 
-
+let gifTag = $("<img>")
 function gifSearch() {
     queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     pokemon + "&api_key=KHQPUaPoLV1yN6ACsLvxGo4GGtPpy8XF"
@@ -50,9 +50,9 @@ function gifSearch() {
         method: "GET"
         }).then(function(response) {
         console.log(response);
-        console.log(response.data[0].embed_url);
-        let gifURL = response.data[0].embed_url;
-
+        console.log(response.data[0].images.fixed_height.url);
+        var gifURL = response.data[0].images.fixed_height.url;
+        //
         gifTag.attr("src", gifURL);
         displayDiv.append(gifTag);
     });
