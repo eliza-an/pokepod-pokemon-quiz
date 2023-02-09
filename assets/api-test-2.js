@@ -1,14 +1,30 @@
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://pokedex2.p.rapidapi.com/pokedex/uk",
-	"method": "GET",
-	"headers": {
-		"X-RapidAPI-Key": "96154dea89mshcbfd4f768aacf0ap185158jsn4bd30598cf6f",
-		"X-RapidAPI-Host": "pokedex2.p.rapidapi.com"
-	}
-};
+const APIKey = `qEfp8gLbO9z879S740uTEQeF`
+const limit = `&limit=50`
+let pokeNames = []
 
-$.ajax(settings).then(function (response) {
-	console.log(response);
-});
+
+let generatorURL = (`https://api.fungenerators.com/name/generate?category=pokemon` + limit + `&api_key=` + APIKey)
+$.ajax({
+	url: generatorURL,
+	method: `GET`
+}).then(function (response) {
+	console.log(response)
+	let names = response.contents.names
+	console.log(names)
+	for (let i = 0; i < names.length; i++)
+		if (pokeNames.includes(names[i])) {
+			return;
+		} else {
+			pokeNames.push(names[i])
+		}
+		console.log(pokeNames);
+		getRandom();
+})
+
+function getRandom(response) {
+	let randomName = [];
+	randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
+	console.log(randomName);
+return randomName;
+
+}
