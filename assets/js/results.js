@@ -1,6 +1,7 @@
 let pokeInfo = $("#poke-data");
 var pokemon = "bulbasaur"; //takes att of THIS element
 // const displayDiv = $("<div>");
+let pokeInfo = $("#poke-data");
 let gifReturn = $("#gif-return");
 
 // $("body").append(displayDiv);
@@ -38,6 +39,13 @@ function pokemonSearch() {
         pokeInfo.append(pType);
         pokeInfo.append(pAbility);
     });
+
+    pokeInfo.append(pPokemon);
+    pokeInfo.append(pIndex);
+    pokeInfo.append(pType);
+    pokeInfo.append(pAbility);
+});
+
 }
 pokemonSearch();
 
@@ -60,6 +68,7 @@ function gifSearch() {
     });
 }
 gifSearch();
+
 
 
 
@@ -109,3 +118,20 @@ function generatePDF() {
    };
  }
 
+//FORM for certificate//
+ /*
+function generatePDF() {
+    var doc = new jsPDF();
+    var name = document.getElementById("name").value;
+    var image = document.getElementById;
+    doc.text(20, 20, "Name: " + name);
+    var img = new Image();
+    img.src =
+      "https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?w=1920&ssl=1";
+    img.onload = function () {
+      doc.addImage(img, "JPEG", 15, 50, 180, 160);
+      doc.save("form.pdf");
+    };
+  }
+
+  */
