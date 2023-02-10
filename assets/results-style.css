@@ -1,0 +1,23 @@
+body {
+    background: url("./images/pokebig.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.api-return {
+
+    text-align: center;
+}
+
+#poke-data {
+    font-size: 2rem;
+    font-weight: 600;
+    color: yellow;
+    background-color: rgba(0, 51, 109, 0.7);
+}
+
+img {
+    border: 6px solid yellow;
+}
+

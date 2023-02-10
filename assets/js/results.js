@@ -1,7 +1,9 @@
 var pokemon = "bulbasaur"; //takes att of THIS element
-const displayDiv = $("<div>") 
+// const displayDiv = $("<div>");
+let pokeInfo = $("#poke-data");
+let gifReturn = $("#gif-return");
 
-$("body").append(displayDiv);
+// $("body").append(displayDiv);
 
 
 function pokemonSearch() {
@@ -31,10 +33,10 @@ var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
     let pAbility = $("<p>");
     pAbility.text("Ability: " + pokemonAbility);
 
-    displayDiv.append(pPokemon);
-    displayDiv.append(pIndex);
-    displayDiv.append(pType);
-    displayDiv.append(pAbility);
+    pokeInfo.append(pPokemon);
+    pokeInfo.append(pIndex);
+    pokeInfo.append(pType);
+    pokeInfo.append(pAbility);
 });
 }
 pokemonSearch();
@@ -54,7 +56,7 @@ function gifSearch() {
         var gifURL = response.data[0].images.fixed_height.url;
         //
         gifTag.attr("src", gifURL);
-        displayDiv.append(gifTag);
+        gifReturn.append(gifTag);
     });
 }
 gifSearch();
