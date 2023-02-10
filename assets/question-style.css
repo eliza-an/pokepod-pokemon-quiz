@@ -1,0 +1,35 @@
+.results {
+  color: black;
+}
+
+body {
+  background: url("./images/Pokemon-questions-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-primary {
+  padding: 50px;
+  margin: 40px;
+  margin-top: 140px;
+}
+
+.startBtn {
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 5px;
+}
+
+a {
+  color: white;
+  padding: 15px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
