@@ -25,9 +25,7 @@ body {
     background-color: rgba(0, 51, 109, 0.7);
 }
 
-img {
-    border: 6px solid yellow;
-}
+
 
 /*  Jumbotron styling  */
 .jumbotron {
@@ -45,10 +43,18 @@ img {
 
 /*  content styling  */
 /*Image:*/
+#result-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #result-pokemon {
     background-color: rgba(241, 240, 222, 0.7);
-    border: 12px solid yellow;
+    /* border: 12px solid yellow; */
     border-radius: 15px;
+    max-height: 500px;
+
 }
 
 
@@ -57,7 +63,7 @@ img {
 /* Text */
 #result-text-col {
     background-color: rgba(241, 240, 222, 0.7);
-    /* border: 12px solid yellow; */
+    border: 12px solid yellow;
     border-radius: 15px;
 }
 
@@ -72,7 +78,7 @@ img {
 
 #pokemon-name-heading {
     font-family: 'DotGothic16', sans-serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .stat-text {
@@ -80,6 +86,21 @@ img {
 }
 
 .result-text {
-    padding: 3rem;
+    padding-left: 3rem;
     font-size: 1.2rem;
 }
+
+
+/* Styling Gif*/
+#gif-img {
+    border: 6px solid rgb(9, 255, 0);
+}
+
+#gif-return {
+    display: block;
+}
+
+/* styling pokemon-name */
+
+
+/* styling form that creates PDF */
