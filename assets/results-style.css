@@ -1,12 +1,20 @@
+/* From Jenny:
+Font choices added, can view set here
+https://fonts.google.com/share?selection.family=DotGothic16|Luckiest+Guy|Russo+One
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Russo One', sans-serif;
+*/
+
+
 body {
     background: url("./images/pokebig.png");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .api-return {
-
     text-align: center;
 }
 
@@ -21,3 +29,57 @@ img {
     border: 6px solid yellow;
 }
 
+/*  Jumbotron styling  */
+.jumbotron {
+    margin-left: 12%;
+    max-width: 1000px;
+    margin-top: 4rem;
+    border: 1rem solid red;
+    background-color: rgba(241, 240, 222, 0.7);
+}
+
+.row {
+    display: flex;
+}
+
+
+/*  content styling  */
+/*Image:*/
+#result-pokemon {
+    background-color: rgba(241, 240, 222, 0.7);
+    border: 12px solid yellow;
+    border-radius: 15px;
+}
+
+
+
+
+/* Text */
+#result-text-col {
+    background-color: rgba(241, 240, 222, 0.7);
+    /* border: 12px solid yellow; */
+    border-radius: 15px;
+}
+
+.result-head-text {
+    text-align: center;
+    margin: 0;
+}
+
+#result-heading {
+    font-size: 2rem;
+}
+
+#pokemon-name-heading {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 3rem;
+}
+
+.stat-text {
+    padding-left: 3rem;
+}
+
+.result-text {
+    padding: 3rem;
+    font-size: 1.2rem;
+}
