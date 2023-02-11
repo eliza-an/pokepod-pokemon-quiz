@@ -27,6 +27,8 @@
         You Are 
       </h1>
       <h1 class="result-head-text" id="pokemon-name-heading">Bulbasaur</h1>
+      <div class="api-return" id="poke-data">
+      </div>
       <h2 class="stat-text"> Type: 
 
       </h2>
@@ -39,29 +41,33 @@
       <p class="result-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec egestas odio. Nulla pharetra volutpat malesuada. Vivamus dignissim scelerisque tortor, quis posuere felis egestas eget.</p>
       <div class="api-return" id="gif-return"></div>
     </div>
-
-    
       <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
     </div>
   </div>
 </div>
 
-
-<div class="api-return" id="poke-data">
-
+<div class="poke-name-card">
+  <div class="card">
+    <div class="card-header">
+      What's your Pokéname?
+    </div>
+    <div class="card-body">
+      <div id="random-pokename"></div>
+      
+      <!-- <a href="#" class="btn btn-primary">Generate a new name</a> -->
+    </div>
+  </div>
 </div>
-<div class="api-return" id="gif-return">
 
-</div>
-<div id="random-pokename"></div>
 
+<div class="pdf-form">
 <form>
   <form>
     <input type="text" id="name" placeholder="Enter your name">
   </form>
   <br>
   <button id="download-btn">Download Form</button>
-
+</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
