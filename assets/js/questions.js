@@ -30,6 +30,15 @@
 
 let questionsArray = [
     {
+        question: "",
+        answers: [
+            "",
+            "",
+            "",
+            ""
+        ],
+    },
+    {
         question: "What's your favourite season?",
         answers: [
             "Spring",

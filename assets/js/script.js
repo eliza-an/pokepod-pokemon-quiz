@@ -11,18 +11,21 @@ let squirtle=0;
 let charmander=0;
 
 function nextQuestion() {
+    
     let x = 1
-    for(let i = 0; i < questionsArray.length; i++) {
+
+        const questionTitle =$(`#qTitle` + x);
         let questionHeader = $(`<h2>`)
-        questionHeader.text(JSON.stringify(questionsArray[i].question));
-        question.append(questionHeader)
+        questionHeader.attr("id", "qTitle" + x )
+        questionHeader.text(questionsArray[x].question);
+        questionTitle.append(questionHeader)
 
 
 
         
         
-        const questionTitle = document.querySelector(`#qTitle` + x);
-    }
+        
+   x++ 
 }
 
 nextQuestion();
