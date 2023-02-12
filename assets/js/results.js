@@ -1,3 +1,7 @@
+const urlParams = new URLSearchParams(window.location.search);
+const scores = JSON.parse(urlParams.get("scores"));
+console.log(scores);
+
 let pokeInfo = $("#poke-data");
 var pokemon = "bulbasaur"; //takes att of THIS element
 const displayDiv = $("<div>");
@@ -42,6 +46,8 @@ function pokemonSearch() {
 }
 
 // pokemonSearch();
+
+
 
 let gifTag = $("<img>");
 function gifSearch() {
