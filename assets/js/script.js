@@ -88,6 +88,7 @@ function renderQuestion() {
       currentQuestion++;
       if (currentQuestion === questions.length) {
         console.log("Your scores:", scores);
+        window.location.href = "results.html";
       } else {
         renderQuestion();
       }
