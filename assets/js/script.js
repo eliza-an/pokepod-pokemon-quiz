@@ -1,31 +1,88 @@
-const launch = $(`#launchScreen`);
-const startBtn = $(`#startBtn`);
-const question = $(`#question`);
-const options = $(`#options`);
 
+const question = document.getElementById("question");
+const answerForm = document.getElementById("answerForm");
 
-let snorlax=0;
-let pikachu=0;
-let bulbasaur=0;
-let squirtle=0;
-let charmander=0;
+let currentQuestion = 0;
+const questions = [
+  {
+    text: "What's your favourite season?",
+    answers: [
+      { text: "Spring", value: 0, dataIndex: "Pikachu" },
+      { text: "Summer", value: 0, dataIndex: "Snorlax" },
+      { text: "Autumn", value: 0, dataIndex: "Squirtle" },
+      { text: "Winter", value: 0, dataIndex: "Charmander" },
+    ],
+  },
+  {
+    text: "What's your favourite colour?",
+    answers: [
+      { text: "green", value: 0, dataIndex: "Pikachu" },
+      { text: "yellow", value: 0, dataIndex: "Snorlax" },
+      { text: "Red", value: 0, dataIndex: "Squirtle" },
+      { text: "Blue", value: 0, dataIndex: "Charmander" },
+    ],
+  },
+  {
+    text: "On a night out with you your best mate gets in a fight. Where are you?",
+    answers: [
+      { text: "Leading peace talks", value: 0, dataIndex: "Pikachu" },
+      { text: "Throwing the first punch", value: 0, dataIndex: "Snorlax" },
+      { text: "Grabbing the popcorn", value: 0, dataIndex: "Squirtle" },
+      {
+        text: "Running back into the bar and hiding in the toilets",
+        value: 0,
+        dataIndex: "Charmander",
+      },
+    ],
+  },
+];
 
-function nextQuestion() {
-    
-    let x = 1
+let scores = {
+  Pikachu: 0,
+  Snorlax: 0,
+  Squirtle: 0,
+  Charmander: 0,
+};
 
-        const questionTitle =$(`#qTitle` + x);
-        let questionHeader = $(`<h2>`)
-        questionHeader.attr("id", "qTitle" + x )
-        questionHeader.text(questionsArray[x].question);
-        questionTitle.append(questionHeader)
+function renderQuestion() {
+  const currentAnswers = questions[currentQuestion].answers;
+  answerForm.innerHTML = "";
 
+  question.innerText = questions[currentQuestion].text;
 
-
-        
-        
-        
-   x++ 
+  currentAnswers.forEach((answer) => {
+    const button = document.createElement("button");
+    button.name = "answer";
+    button.classList= "btn btn-primary"
+    button.textContent = answer.text;
+    button.id = answer.text;
+  
+    button.addEventListener("click", function () {
+      event.preventDefault();
+      const selectedIndex = questions[currentQuestion].answers.findIndex(
+        (a) => a.text === this.textContent
+      );
+      questions[currentQuestion].answers[selectedIndex].value += 1;
+  
+      const selectedDataIndex =
+        questions[currentQuestion].answers[selectedIndex].dataIndex;
+      scores[selectedDataIndex] +=
+        questions[currentQuestion].answers[selectedIndex].value;
+  
+      currentQuestion++;
+      if (currentQuestion === questions.length) {
+        console.log("Your scores:", scores);
+      } else {
+        renderQuestion();
+      }
+    });
+  
+    answerForm.appendChild(button);
+  });
+  
 }
 
-nextQuestion();
+// ...
+
+
+renderQuestion();
