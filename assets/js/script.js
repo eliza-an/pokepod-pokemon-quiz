@@ -1,4 +1,3 @@
-
 const question = document.getElementById("question");
 const answerForm = document.getElementById("answerForm");
 
@@ -35,6 +34,23 @@ const questions = [
       },
     ],
   },
+  {
+    text: "In the training montage of your life, what's the sountrack?",
+    answers: [
+      { text: "Slow, pensive indie-folk", value: 0, dataIndex: "Pikachu" },
+      {
+        text: "Hyperpop remixes of songs that were already pretty hyper",
+        value: 0,
+        dataIndex: "Snorlax",
+      },
+      { text: "Classic rock", value: 0, dataIndex: "Squirtle" },
+      {
+        text: "Ballads!",
+        value: 0,
+        dataIndex: "Charmander",
+      },
+    ],
+  },
 ];
 
 let scores = {
@@ -53,22 +69,22 @@ function renderQuestion() {
   currentAnswers.forEach((answer) => {
     const button = document.createElement("button");
     button.name = "answer";
-    button.classList= "btn btn-primary"
+    button.classList = "btn btn-primary";
     button.textContent = answer.text;
-    button.id = answer.text;
-  
+    button.id = answer.dataIndex;
+
     button.addEventListener("click", function () {
       event.preventDefault();
       const selectedIndex = questions[currentQuestion].answers.findIndex(
         (a) => a.text === this.textContent
       );
       questions[currentQuestion].answers[selectedIndex].value += 1;
-  
+
       const selectedDataIndex =
         questions[currentQuestion].answers[selectedIndex].dataIndex;
       scores[selectedDataIndex] +=
         questions[currentQuestion].answers[selectedIndex].value;
-  
+
       currentQuestion++;
       if (currentQuestion === questions.length) {
         console.log("Your scores:", scores);
@@ -76,13 +92,9 @@ function renderQuestion() {
         renderQuestion();
       }
     });
-  
+
     answerForm.appendChild(button);
   });
-  
 }
-
-// ...
-
 
 renderQuestion();
