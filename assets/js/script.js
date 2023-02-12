@@ -1,4 +1,3 @@
-// import{questions}from`./questions`;
 const launch = $(`#launchScreen`);
 const startBtn = $(`#startBtn`);
 const question = $(`#question`);
@@ -15,11 +14,8 @@ function nextQuestion() {
     let x = 1
     for(let i = 0; i < questionsArray.length; i++) {
         let questionHeader = $(`<h2>`)
-        // questionHeader.html(JSON.stringify(questionsArray[i].question))
         questionHeader.text(JSON.stringify(questionsArray[i].question));
         question.append(questionHeader)
-        console.log(questionsArray[i].question);
-        console.log(JSON.stringify(questionsArray[i].question))
 
 
 
