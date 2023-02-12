@@ -42,8 +42,8 @@ let questions = [
     {
         question: "What's your favourite colour?",
         answers: [
-            "Yellow",
             "Green",
+            "Yellow",
             "Red",
             "Blue"
         ],
@@ -51,18 +51,18 @@ let questions = [
     {
         question: "On a night out with you your best mate gets in a fight. Where are you?",
         answers: [
-            "Throwing the first punch",
             "Leading peace talks",
-            "Running back into the bar and hiding in the toilets",
-            "Grabbing the popcorn"
+            "Throwing the first punch",
+            "Grabbing the popcorn",
+            "Running back into the bar and hiding in the toilets"
         ],
     },
     {
         question: "In the training montage of your life, what's the sountrack?",
         answers: [
-            "Classic rock",
             "Slow, pensive indie-folk",
             "Hyperpop remixes of songs that were already pretty hyper",
+            "Classic rock",
             "Ballads!"
         ],
     },
@@ -70,45 +70,45 @@ let questions = [
         question: "What would you rather have handy if you're stranded on a desert island?",
         answers: [
             "A stack of books you'll finally have time to get through",
-            "Swimwear, beachball, sunlotion",
+            "A few of your closest friends",
             "A survival guide and a first aid kit",
-            "A few of your closest friends"
+            "Swimwear, beachball, sunlotion"
         ],
     },
     {
         question: "What's your dream holiday destination?",
         answers: [
-            "Snowy mountains",
-            "In the city",
             "A nice cabin in a forest",
-            "Beachside"
+            "In the city",
+            "Beachside",
+            "Snowy mountains"
         ],
     },
     {
         question: "You have to survive on just one of the below foods for the next year. What's your pick?",
         answers: [
-            "Dessert",
             "Plant-based everything",
             "Pizza",
+            "Dessert",
             "Can a person survive on cheese alone? Let's find out!"
         ],
     },
     {
         question: "Who were you in high school?",
         answers: [
-            "The class clown/detention magnet",
+            "Top of the class",
             "Everyone's friend",
-            "On every sport's team",
-            "Top of the class"
+            "On every sports team",
+            "The class clown/detention magnet"
         ],
     },
     {
         question: "It's your pick for movie night. What are we watching?",
         answers: [
+            "A horror so creepy that even you get nightmares",
             "A good comedy or cheesy rom-com",
-            "Something older than your parents",
             "Action! (get it?)",
-            "A horror so creepy that even you get nightmares"
+            "Something older than your parents"
         ],
     }
 ]
