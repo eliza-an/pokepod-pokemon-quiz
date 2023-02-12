@@ -1,35 +1,34 @@
-let questionPool = [
-    {   
-        question: `Question One`,
-        answers: [`a`, `b`, `c`, `d`],
-        correct: `a`
-    // slice, foreach, 2d array
-    },
-    {   
-        question: `Question Two`,
-        answers: [`a`, `b`, `c`, `d`],
-    // slice, foreach, 2d array
-    },
-    {   
-        question: `Question Three`,
-        answers: [`a`, `b`, `c`, `d`],
-    // slice, foreach, 2d array
-    },
-    {   
-        question: `Question Four`,
-        answers: [`a`, `b`, `c`, `d`],
-    // slice, foreach, 2d array
-    },
-    {   
-        question: `Question Five`,
-        answers: [`a`, `b`, `c`, `d`],
-    // slice, foreach, 2d array
-    },
-]
+// let questionPool = [
+//     {   
+//         question: `Question One`,
+//         answers: [`a`, `b`, `c`, `d`],
+//         correct: `a`
+//     // slice, foreach, 2d array
+//     },
+//     {   
+//         question: `Question Two`,
+//         answers: [`a`, `b`, `c`, `d`],
+//     // slice, foreach, 2d array
+//     },
+//     {   
+//         question: `Question Three`,
+//         answers: [`a`, `b`, `c`, `d`],
+//     // slice, foreach, 2d array
+//     },
+//     {   
+//         question: `Question Four`,
+//         answers: [`a`, `b`, `c`, `d`],
+//     // slice, foreach, 2d array
+//     },
+//     {   
+//         question: `Question Five`,
+//         answers: [`a`, `b`, `c`, `d`],
+//     // slice, foreach, 2d array
+//     },
+// ]
 
 
-/*
-let questions = [
+let questionsArray = [
     {
         question: "What's your favourite season?",
         answers: [
@@ -112,7 +111,7 @@ let questions = [
         ],
     }
 ]
-*/
+
 
 
 //Template to add new question:
