@@ -1,10 +1,10 @@
 let pokeInfo = $("#poke-data");
 var pokemon = "bulbasaur"; //takes att of THIS element
-// const displayDiv = $("<div>");
+const displayDiv = $("<div>");
 //let pokeInfo = $("#poke-data");
 let gifReturn = $("#gif-return");
 
-// $("body").append(displayDiv);
+$("body").append(displayDiv);
 
 function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
@@ -16,33 +16,32 @@ function pokemonSearch() {
     let pokemon = response.name;
 
     let pPokemon = $("<p>");
-    pPokemon.text("you are " + pokemon);
+    pPokemon.text(pokemon);
 
     let indexNo = response.game_indices[12].game_index;
     let pIndex = $("<p>");
-    pIndex.text("#" + indexNo);
+    pIndex.text(indexNo);
 
     let pokemonType = response.types[0].type.name;
     let pType = $("<p>");
-    pType.text("type: " + pokemonType);
+    pType.text(pokemonType);
 
     let pokemonAbility = response.abilities[1].ability.name;
     let pAbility = $("<p>");
-    pAbility.text("Ability: " + pokemonAbility);
+    pAbility.text(pokemonAbility);
 
     pokeInfo.append(pPokemon);
     pokeInfo.append(pIndex);
     pokeInfo.append(pType);
     pokeInfo.append(pAbility);
   });
-  /*
-    pokeInfo.append(pPokemon);
-    pokeInfo.append(pIndex);
-    pokeInfo.append(pType);
-    pokeInfo.append(pAbility);*/
+    // pokeInfo.append(pPokemon);
+    // pokeInfo.append(pIndex);
+    // pokeInfo.append(pType);
+    // pokeInfo.append(pAbility);
 }
 
-pokemonSearch();
+// pokemonSearch();
 
 let gifTag = $("<img>");
 function gifSearch() {
@@ -59,12 +58,14 @@ function gifSearch() {
     // console.log(response.data[0].images.fixed_height.url);
     var gifURL = response.data[0].images.fixed_height.url;
     //
-    gifTag.attr("src", gifURL);
+    gifTag.attr({
+        "src":gifURL,
+        "id":"gif-img"
+        });
     gifReturn.append(gifTag);
   });
 }
 gifSearch();
-
 
 
 const APIKey = `qEfp8gLbO9z879S740uTEQeF`;
