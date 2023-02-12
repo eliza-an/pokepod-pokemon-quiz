@@ -48,7 +48,7 @@ let questionsArray = [
         ],
     },
     {
-        question: "What's your favourite colour?",
+        question: "Which color do you prefer?",
         answers: [
             "Green",
             "Yellow",
@@ -57,7 +57,7 @@ let questionsArray = [
         ],
     },
     {
-        question: "On a night out with you your best mate gets in a fight. Where are you?",
+        question: "On a night out with you, your best mate gets in a fight. Where are you?",
         answers: [
             "Leading peace talks",
             "Throwing the first punch",
