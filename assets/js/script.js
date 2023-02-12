@@ -1,8 +1,8 @@
 // import{questions}from`./questions`;
-const launch = document.querySelector(`#launchScreen`);
-const startBtn = document.querySelector(`#startBtn`);
-const question = document.querySelector(`#question`);
-const options = document.querySelector(`#options`);
+const launch = $(`#launchScreen`);
+const startBtn = $(`#startBtn`);
+const question = $(`#question`);
+const options = $(`#options`);
 
 
 let snorlax=0;
@@ -15,9 +15,12 @@ function nextQuestion() {
     let x = 1
     for(let i = 0; i < questionsArray.length; i++) {
         let questionHeader = $(`<h2>`)
-        questionHeader.text(questionsArray[i].question)
+        // questionHeader.html(JSON.stringify(questionsArray[i].question))
+        questionHeader.text(JSON.stringify(questionsArray[i].question));
         question.append(questionHeader)
-        console.log(questionHeader)
+        console.log(questionsArray[i].question);
+        console.log(JSON.stringify(questionsArray[i].question))
+
 
 
         
