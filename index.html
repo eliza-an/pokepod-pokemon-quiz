@@ -20,9 +20,7 @@
 </head>
 
 <body>
-  <button type="button" class="btn btn-info results"><a href="results.html"><i class="fa-solid fa-backward-step fa-1x"></i>  Previous Results</a></button>
-
-
+  <button type="button" class="btn btn-primary results" data-toggle="modal" data-target="#exampleModal"> Previous Results</button>
 
   <div class="jumbotron">
     <div class="jumbotron-inner col-lg-8 col-md-8">
@@ -32,8 +30,6 @@
       <a class="btn btn-primary btn-lg btn-block" id="startBtn" href="./questions.html" role="button">Click Here to Find Out!</a>
   </div>
   </div>
-
-
 
 
 <!-- href="./questions/q1.html"  -->
@@ -46,26 +42,73 @@
         limit. Keep in mind that incorrect answers will penalize your
         score/time by ten seconds!
       </p>
-
-      
-
       <a class="startBtn" href="./questions.html" role="button">Click Here to Find Out!</a>
-
     </div>
-
     <div id="questions" class="hide">
       <h2 id="question-title"></h2>
       <div id="choices" class="choices"></div>
     </div> -->
 
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> -->
+  <!-- Launch demo modal -->
+  <!-- <a href="results.html"></a> -->
+<!-- </button> -->
+
+<!--Modal to display previous results-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 <footer>
   <p><i class="fa-solid fa-gamepad"></i> Made by Elizaveta Anufrieva - Lorenzo Francis-Walker - Henry Green - Jennifer Hull <i class="fa-solid fa-gamepad"></i></p>
 </footer>
-
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/api-test-2.js"></script>
