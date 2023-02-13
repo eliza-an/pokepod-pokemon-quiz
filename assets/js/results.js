@@ -134,6 +134,8 @@ function getRandom(response) {
 
 document.getElementById("download-btn").addEventListener("click", function () {
   var doc = new jsPDF();
+  let image2 = new Image();
+  image2.src = "assets/images/pokemon-logo-text-png.png";
   var name = document.getElementById("name").value;
   var image = new Image();
   if (pokemon === "bulbasaur") {
@@ -145,16 +147,19 @@ document.getElementById("download-btn").addEventListener("click", function () {
   } else if (pokemon === "pikachu") {
     image.src = "assets/images/charmander.png";
   }
+  doc.addImage(image2, "JPEG", 80, 0, 50, 20);
   doc.text(
     20,
-    20,
+    40,
     "I hearby confirm that " +
       name +
       " should now be known as " +
       pokemon +
       " . \n This is required by PokeLaw and applies to all PokeJurisdictions"
   );
-  doc.addImage(image, "JPEG", 15, 40, 180, 160);
+
+  doc.addImage(image, "JPEG", 15, 60, 180, 160);
+
   doc.save("form.pdf");
 });
 
