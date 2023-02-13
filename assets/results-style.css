@@ -51,6 +51,7 @@ body {
 }
 
 #result-pokemon {
+    font-family: 'DotGothic16', sans-serif;
     background-color: rgba(241, 240, 222, 0.7);
     /* border: 12px solid yellow; */
     border-radius: 15px;
