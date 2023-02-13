@@ -27,6 +27,8 @@ if( (pikachuscore>bulbasaurscore) && (pikachuscore>charmanderscore) && (pikachus
   pokemon ="charmander"
 }else if (squirtlescore>pikachuscore && squirtlescore>bulbasaurscore && squirtlescore>charmanderscore ){
   pokemon = "squirtle"
+} else {
+  pokemon = "snorlax"
 }
 
 
