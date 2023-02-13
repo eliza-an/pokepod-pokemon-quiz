@@ -145,7 +145,15 @@ document.getElementById("download-btn").addEventListener("click", function () {
   } else if (pokemon === "pikachu") {
     image.src = "assets/images/charmander.png";
   }
-  doc.text(20, 20, "Name: " + name);
+  doc.text(
+    20,
+    20,
+    "I hearby confirm that " +
+      name +
+      " should now be known as " +
+      pokemon +
+      " . \n This is required by PokeLaw and applies to all PokeJurisdictions"
+  );
   doc.addImage(image, "JPEG", 15, 40, 180, 160);
   doc.save("form.pdf");
 });
