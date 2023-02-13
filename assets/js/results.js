@@ -146,6 +146,8 @@ document.getElementById("download-btn").addEventListener("click", function () {
     image.src = "assets/images/squirtle.png";
   } else if (pokemon === "pikachu") {
     image.src = "assets/images/charmander.png";
+  } else {
+    image.src="assets/images/meowth.png"  
   }
   doc.addImage(image2, "JPEG", 80, 0, 50, 20);
   doc.text(
@@ -174,4 +176,6 @@ if (pokemon === "bulbasaur") {
   mainImage.attr("src", "assets/images/squirtle.png");
 } else if (pokemon === "charmander") {
   mainImage.attr("src", "assets/images/charmander.png");
+} else {
+  mainImage.attr("src", "assets/images/meowth.png");
 }
