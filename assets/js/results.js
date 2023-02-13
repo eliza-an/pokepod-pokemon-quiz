@@ -1,4 +1,4 @@
-var pokemon = "charmander"; //This needs to be result of quiz
+var pokemon = ""; //This needs to be result of quiz
 
 let pokemonName = $("#pokemon-name-heading");
 let pokeType = $("#poke-type");
@@ -9,6 +9,28 @@ const scores = JSON.parse(urlParams.get("scores"));
 console.log(scores);
 
 let gifReturn = $("#gif-return");
+
+
+
+
+var pikachuscore= scores.Pikachu
+var bulbasaurscore = scores.Bulbasaur
+var charmanderscore = scores.Charmander
+var squirtlescore = scores.Squirtle
+
+
+if( (pikachuscore>bulbasaurscore) && (pikachuscore>charmanderscore) && (pikachuscore>squirtlescore)){
+  pokemon="pikachu"
+} else if (bulbasaurscore>pikachuscore && bulbasaurscore>charmanderscore && bulbasaurscore>squirtlescore) {
+ pokemon= "bulbasaur"
+}else if (charmanderscore>pikachuscore && charmanderscore>bulbasaurscore && charmanderscore>squirtlescore){
+  pokemon ="charmander"
+}else if (squirtlescore>pikachuscore && squirtlescore>bulbasaurscore && squirtlescore>charmanderscore ){
+  pokemon = "squirtle"
+}
+
+
+
 
 function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
