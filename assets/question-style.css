@@ -9,12 +9,16 @@ body {
 }
 
 .btn-primary {
-  padding: 50px;
+  display: inline-block;
+  padding: 10px;
   margin: 40px;
+
+
   margin-top: 140px;
   width: 250px;
   height: 150px;
 font-size: larger;
+
 }
 
 .startBtn {
@@ -30,6 +34,19 @@ a {
    
 }
 
+/*
+.btn-more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#answerForm {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  text-align: center;
+}
+*/
 .choicescontainer {
     position: relative;
     display: flex;
@@ -45,4 +62,5 @@ a {
    padding-top: 9px;
 
   }
+
 
