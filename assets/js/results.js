@@ -60,6 +60,14 @@ function pokemonSearch() {
     apiAbility.text(pokemonAbility);
     pokeAbility.append(apiAbility);
 
+localStorage.setItem("Pokemon", pokemon )
+localStorage.setItem("Index Number", indexNo )
+localStorage.setItem("Pokemon Type", pokemonType )
+localStorage.setItem("Ability", pokemonAbility )
+localStorage.setItem("Your PokeName", randomName )
+
+
+
   });
 }
 pokemonSearch();
@@ -89,6 +97,14 @@ function gifSearch() {
 gifSearch();
 
 
+function getRandom(response) {
+  let randomName = [];
+  randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
+  return randomName;
+
+}
+
+
 const APIKey = `qEfp8gLbO9z879S740uTEQeF`;
 const limit = `&limit=50`;
 let pokeNames = [];
@@ -115,14 +131,10 @@ $.ajax({
   let nameDisplay = $(`<h1>`);
   nameDisplay.text(`Your pokename is` + ` ` + getRandom());
   randomPokeName.append(nameDisplay);
+
 })
 
 
-function getRandom(response) {
-  let randomName = [];
-  randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
-  return randomName;
-}
 
 //FORM for certificate//
 
