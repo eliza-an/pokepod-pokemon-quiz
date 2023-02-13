@@ -52,6 +52,91 @@ const questions = [
       },
     ],
   },
+  {
+    text: "What would you rather have handy if you're stranded on a desert island?",
+    answers: [
+      { text: "A stack of books you'll finally have time to get through", value: 0, dataIndex: "Bulbasaur" },
+      {
+        text: "A few of your closest friends",
+        value: 0,
+        dataIndex: "Pikachu",
+      },
+      { text: "A survival guide and a first aid kit", value: 0, dataIndex: "Charmander" },
+      {
+        text: "Swimwear, beachball, sunlotion",
+        value: 0,
+        dataIndex: "Squirtle",
+      },
+    ],
+  },
+  {
+    text: "What's your dream holiday destination?",
+    answers: [
+      { text: "A nice cabin in a forest", value: 0, dataIndex: "Bulbasaur" },
+      {
+        text: "In the city",
+        value: 0,
+        dataIndex: "Pikachu",
+      },
+      { text: "Beachside", value: 0, dataIndex: "Charmander" },
+      {
+        text: "Snowy mountains",
+        value: 0,
+        dataIndex: "Squirtle",
+      },
+    ],
+  },
+  {
+    text: "You have to survive on just one of the below foods for the next year. What's your pick?",
+    answers: [
+      { text: "Plant-based everything", value: 0, dataIndex: "Bulbasaur" },
+      {
+        text: "Pizza",
+        value: 0,
+        dataIndex: "Pikachu",
+      },
+      { text: "Dessert", value: 0, dataIndex: "Charmander" },
+      {
+        text: "Can a person survive on cheese alone? Let's find out!",
+        value: 0,
+        dataIndex: "Squirtle",
+      },
+    ],
+  },
+  {
+    text: "Who were you in high school?",
+    answers: [
+      { text:  "Top of the class", value: 0, dataIndex: "Bulbasaur" },
+      {
+        text: "Everyone's friend",
+        value: 0,
+        dataIndex: "Pikachu",
+      },
+      { text: "The class clown/detention magnet", value: 0, dataIndex: "Charmander" },
+      {
+        text: "Ballads!",
+        value: 0,
+        dataIndex: "Squirtle",
+      },
+    ],
+  },
+  {
+    text: "It's your pick for movie night. What are we watching?",
+    answers: [
+      { text:  "A horror so creepy that even you get nightmares", value: 0, dataIndex: "Bulbasaur" },
+      {
+        text: "A good comedy or cheesy rom-com",
+        value: 0,
+        dataIndex: "Pikachu",
+      },
+      { text: "Action! (get it?)", value: 0, dataIndex: "Charmander" },
+      {
+        text: "Something older than your parents",
+        value: 0,
+        dataIndex: "Squirtle",
+      },
+    ],
+  },
 ];
 
 let scores = {
