@@ -6,48 +6,48 @@ const questions = [
   {
     text: "What's your favourite season?",
     answers: [
-      { text: "Spring", value: 0, dataIndex: "Pikachu" },
-      { text: "Summer", value: 0, dataIndex: "Snorlax" },
-      { text: "Autumn", value: 0, dataIndex: "Squirtle" },
-      { text: "Winter", value: 0, dataIndex: "Charmander" },
+      { text: "Spring", value: 0, dataIndex: "Bulbasaur" },
+      { text: "Summer", value: 0, dataIndex: "Pikachu" },
+      { text: "Autumn", value: 0, dataIndex: "Charmander" },
+      { text: "Winter", value: 0, dataIndex: "Squirtle" },
     ],
   },
   {
     text: "What's your favourite colour?",
     answers: [
-      { text: "green", value: 0, dataIndex: "Pikachu" },
-      { text: "yellow", value: 0, dataIndex: "Snorlax" },
-      { text: "Red", value: 0, dataIndex: "Squirtle" },
-      { text: "Blue", value: 0, dataIndex: "Charmander" },
+      { text: "green", value: 0, dataIndex: "Bulbasaur" },
+      { text: "yellow", value: 0, dataIndex: "Pikachu" },
+      { text: "Red", value: 0, dataIndex: "Charmander" },
+      { text: "Blue", value: 0, dataIndex: "Squirtle" },
     ],
   },
   {
     text: "On a night out with you your best mate gets in a fight. Where are you?",
     answers: [
-      { text: "Leading peace talks", value: 0, dataIndex: "Pikachu" },
-      { text: "Throwing the first punch", value: 0, dataIndex: "Snorlax" },
-      { text: "Grabbing the popcorn", value: 0, dataIndex: "Squirtle" },
+      { text: "Leading peace talks", value: 0, dataIndex: "Bulbasaur" },
+      { text: "Throwing the first punch", value: 0, dataIndex: "Pikachu" },
+      { text: "Grabbing the popcorn", value: 0, dataIndex: "Charmander" },
       {
         text: "Running back into the bar and hiding in the toilets",
         value: 0,
-        dataIndex: "Charmander",
+        dataIndex: "Squirtle",
       },
     ],
   },
   {
     text: "In the training montage of your life, what's the sountrack?",
     answers: [
-      { text: "Slow, pensive indie-folk", value: 0, dataIndex: "Pikachu" },
+      { text: "Slow, pensive indie-folk", value: 0, dataIndex: "Bulbasaur" },
       {
         text: "Hyperpop remixes of songs that were already pretty hyper",
         value: 0,
-        dataIndex: "Snorlax",
+        dataIndex: "Pikachu",
       },
-      { text: "Classic rock", value: 0, dataIndex: "Squirtle" },
+      { text: "Classic rock", value: 0, dataIndex: "Charmander" },
       {
         text: "Ballads!",
         value: 0,
-        dataIndex: "Charmander",
+        dataIndex: "Squirtle",
       },
     ],
   },
@@ -55,7 +55,7 @@ const questions = [
 
 let scores = {
   Pikachu: 0,
-  Snorlax: 0,
+  Bulbasaur: 0,
   Squirtle: 0,
   Charmander: 0,
 };
