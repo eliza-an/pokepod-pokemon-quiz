@@ -1,51 +1,45 @@
+
+var pokemon = "pikachu"; //This needs to be result of quiz
+
+let pokemonName = $("#pokemon-name-heading");
+let pokeType = $("#poke-type");
+let pokeIndex = $("#poke-index");
+let pokeAbility = $("#poke-ability");
+=======
 const urlParams = new URLSearchParams(window.location.search);
 const scores = JSON.parse(urlParams.get("scores"));
 console.log(scores);
-
-let pokeInfo = $("#poke-data");
-var pokemon = "bulbasaur"; //takes att of THIS element
-const displayDiv = $("<div>");
-//let pokeInfo = $("#poke-data");
 let gifReturn = $("#gif-return");
 
-$("body").append(displayDiv);
-
-//function pokemonSearch() {
+function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
   $.ajax({
     url: queryURL,
     method: "GET",
-  }).then(function (response) {
-    // console.log(response);
-    let pokemon = response.name;
+  }).then(function(response) {
+    console.log(response);
+    let pokeName = response.name;
+    nameDisplay = pokeName.toUpperCase();
+    pokemonName.text(nameDisplay);
 
-    let pPokemon = $("<p>");
-    pPokemon.text(pokemon);
-
-    let indexNo = response.game_indices[12].game_index;
-    let pIndex = $("<p>");
-    pIndex.text(indexNo);
+    let indexNo = response.game_indices[13].game_index;
+    let apiIndex = $("<span>");
+    apiIndex.text("#" + indexNo);
+    pokeIndex.append(apiIndex);
 
     let pokemonType = response.types[0].type.name;
-    let pType = $("<p>");
-    pType.text(pokemonType);
+    let apiType = $("<span>");
+    apiType.text(pokemonType);
+    pokeType.append(apiType);
 
-    let pokemonAbility = response.abilities[1].ability.name;
-    let pAbility = $("<p>");
-    pAbility.text(pokemonAbility);
+    let pokemonAbility = response.abilities[0].ability.name;
+    let apiAbility = $("<span>");
+    apiAbility.text(pokemonAbility);
+    pokeAbility.append(apiAbility);
 
-    pokeInfo.append(pPokemon);
-    pokeInfo.append(pIndex);
-    pokeInfo.append(pType);
-    pokeInfo.append(pAbility);
   });
-  // pokeInfo.append(pPokemon);
-  // pokeInfo.append(pIndex);
-  // pokeInfo.append(pType);
-  // pokeInfo.append(pAbility);
 }
-
-// pokemonSearch();
+pokemonSearch();
 
 let gifTag = $("<img>");
 function gifSearch() {
