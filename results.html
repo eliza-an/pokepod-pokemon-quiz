@@ -11,11 +11,59 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Luckiest+Guy&family=Russo+One&display=swap" rel="stylesheet">
 
     <title>PokéQuiz - Results</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/results-style.css" />
   </head>
 
   <body>
+
+
+    <button type="button" class="btn btn-primary results" data-toggle="modal" data-target="#exampleModal"> Previous Results</button>
+
+<!--Modal to display previous results-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id ="div1" class="card-text"></p>
+          
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p  id ="div2" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p id ="div3" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="jumbotron">
   <div class="row">
@@ -66,13 +114,15 @@
     <input type="text" id="name" placeholder="Enter your name">
   </form>
   <br>
-  <button id="download-btn">Download Form</button>
+  <button id="download-btn">Enter your Name for your PokeCertificate! </button>
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
-<!-- <script src="./assets/js/questions.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+ <script src="./assets/js/questions.js"></script> -->
 <script src="assets/js/results.js"></script>
+<script src="./assets/js/final.js"></script>
+
 </body>

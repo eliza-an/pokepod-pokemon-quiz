@@ -18,3 +18,11 @@ for (var i = 0; i < localStorage.length-1; i++) {
     const appenddiv = document.getElementById("div1");
     appenddiv.appendChild(textsection);
   }
+
+var inputval= nameinput.value
+
+if (inputval=null){
+    document.getElementById("startBtn").disabled = true;
+}else{   
+     document.getElementById("startBtn").disabled = false;
+}
