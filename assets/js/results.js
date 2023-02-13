@@ -74,7 +74,7 @@ localStorage.setItem("Pokemon", pokemon )
 localStorage.setItem("Index Number", indexNo )
 localStorage.setItem("Pokemon Type", pokemonType )
 localStorage.setItem("Ability", pokemonAbility )
-localStorage.setItem("Your PokeName", randomName )
+
 
 
 
@@ -144,9 +144,6 @@ $.ajax({
   let nameDisplay = $(`<h1>`);
   nameDisplay.text(`Your pokename is` + ` ` + getRandom());
   randomPokeName.append(nameDisplay);
-
-
-})
 
 });
 
