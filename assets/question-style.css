@@ -12,20 +12,29 @@ body {
   display: inline-block;
   padding: 10px;
   margin: 40px;
-  font-size: 20px;
+
+
+  margin-top: 140px;
+  width: 250px;
+  height: 150px;
+font-size: larger;
+
 }
 
 .startBtn {
   border: 1px solid red;
   background-color: red;
-  border-radius: 5px;
+  border-radius: 8px;
+  
 }
 
 a {
   color: white;
-  padding: 15px;
+  padding: 10px;  
+   
 }
 
+/*
 .btn-more {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,4 +46,21 @@ a {
   grid-row: 3 / span 1;
   text-align: center;
 }
+*/
+.choicescontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  ul li{
+    list-style-type: none;
+   display: inline;
+   padding-top: 9px;
+
+  }
+
 
