@@ -9,27 +9,90 @@ body {
 }
 
 .btn-primary {
-  padding: 50px;
-  margin: 40px;
-  margin-top: 140px;
+  display: inline-block;
+  margin:20px;
+  font-size: 20px;
+  width: 200px
+
+
 }
 
 .startBtn {
   border: 1px solid red;
   background-color: red;
-  border-radius: 5px;
+  border-radius: 8px;
+  
 }
 
 a {
   color: white;
-  padding: 15px;
+  padding: 15px;  
+   
 }
 
-.container {
+
+.btn-more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 19%;
+
+}
+
+#answerForm {
+  grid-column: 2 / span 1;
+  grid-row: 6 / span 1;
+  text-align: center;
+}
+
+#Pikachu{
+ border-radius: 5px;
+ background-color: ;
+ border: 1px solid rgb(64, 155, 197) ;
+}
+
+#Bulbasaur{
+  border-radius: 5px;
+  background-color: rgb(197, 195, 64);
+  border: 1px solid  rgb(197, 195, 64) ;
+}
+
+#Squirtle{
+  border-radius: 5px;
+  background-color: rgb(64, 197, 93);
+  border: 1px solid  rgb(64, 197, 93) ;
+}
+
+#Charmander{
+  border-radius: 5px;
+  background-color: rgb(197, 128, 64);
+  border: 1px solid rgb(197, 128, 64) ;
+}
+
+
+#questions{
+  font-family: 'DotGothic16', sans-serif;
+}
+
+#question{
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+/* 
+.choicescontainer {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 10%;
   }
+
+  ul li{
+    list-style-type: none;
+   display: inline;
+   padding-top: 9px;
+
+  }
+
+ */

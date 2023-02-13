@@ -1,10 +1,14 @@
+
 var pokemon = "pikachu"; //This needs to be result of quiz
 
 let pokemonName = $("#pokemon-name-heading");
 let pokeType = $("#poke-type");
 let pokeIndex = $("#poke-index");
 let pokeAbility = $("#poke-ability");
-
+=======
+const urlParams = new URLSearchParams(window.location.search);
+const scores = JSON.parse(urlParams.get("scores"));
+console.log(scores);
 let gifReturn = $("#gif-return");
 
 function pokemonSearch() {
@@ -53,14 +57,13 @@ function gifSearch() {
     var gifURL = response.data[0].images.fixed_height.url;
     //
     gifTag.attr({
-        "src":gifURL,
-        "id":"gif-img"
-        });
+      src: gifURL,
+      id: "gif-img",
+    });
     gifReturn.append(gifTag);
   });
 }
 gifSearch();
-
 
 const APIKey = `qEfp8gLbO9z879S740uTEQeF`;
 const limit = `&limit=50`;
@@ -88,8 +91,7 @@ $.ajax({
   let nameDisplay = $(`<h1>`);
   nameDisplay.text(`Your pokename is` + ` ` + getRandom());
   randomPokeName.append(nameDisplay);
-})
-
+});
 
 function getRandom(response) {
   let randomName = [];
@@ -100,13 +102,12 @@ function getRandom(response) {
 //FORM for certificate//
 
 document.getElementById("download-btn").addEventListener("click", function () {
-    var doc = new jsPDF();
-    var name = document.getElementById("name").value;
-    var image = new Image();
-    image.src = "https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?w=1920&ssl=1";
-    doc.text(20, 20, "Name: " + name);
-    doc.addImage(image, 'JPEG', 15, 40, 180, 160);
-    doc.save("form.pdf");
-  });
-  
-
+  var doc = new jsPDF();
+  var name = document.getElementById("name").value;
+  var image = new Image();
+  image.src =
+    "https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?w=1920&ssl=1";
+  doc.text(20, 20, "Name: " + name);
+  doc.addImage(image, "JPEG", 15, 40, 180, 160);
+  doc.save("form.pdf");
+});
