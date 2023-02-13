@@ -100,7 +100,7 @@ function renderQuestion() {
 }
 
 renderQuestion();
-=======
+/*
 const launch = $(`#launchScreen`);
 const startBtn = $(`#startBtn`);
 const question = $(`#question`);
@@ -132,4 +132,4 @@ function nextQuestion() {
     questionTitle.append(questionHeader)
     x++
 }
-
+*/

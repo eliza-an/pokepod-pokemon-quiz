@@ -10,7 +10,7 @@ let gifReturn = $("#gif-return");
 
 $("body").append(displayDiv);
 
-function pokemonSearch() {
+//function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
   $.ajax({
     url: queryURL,
