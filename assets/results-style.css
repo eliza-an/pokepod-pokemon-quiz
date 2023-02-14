@@ -28,9 +28,8 @@ body {
 
 /*  Jumbotron styling  */
 .jumbotron {
-    margin-left: 12%;
-    max-width: 1000px;
-    margin-top: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
     border: 1rem solid red;
     background-color: rgba(241, 240, 222, 0.7);
 }
@@ -42,11 +41,7 @@ body {
 
 /*  content styling  */
 /*Image:*/
-#result-image-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #result-pokemon {
     font-family: 'DotGothic16', sans-serif;
@@ -54,6 +49,7 @@ body {
     /* border: 12px solid yellow; */
     border-radius: 15px;
     max-height: 500px;
+    margin-left: -5%;
 
 }
 
