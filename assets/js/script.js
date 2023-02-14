@@ -112,9 +112,9 @@ const questions = [
         value: 0,
         dataIndex: "Pikachu",
       },
-      { text: "The class clown/detention magnet", value: 0, dataIndex: "Charmander" },
+      { text: "On every sports team!", value: 0, dataIndex: "Charmander" },
       {
-        text: "Ballads!",
+        text: "The class clown/detention magnet",
         value: 0,
         dataIndex: "Squirtle",
       },

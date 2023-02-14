@@ -8,7 +8,7 @@ https://fonts.google.com/share?selection.family=DotGothic16|Luckiest+Guy|Russo+O
 
 
 body {
-    background: url("./images/pokebig.png");
+    background: url("../images/pokebig.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
