@@ -130,3 +130,12 @@ body {
     font-family: 'DotGothic16', sans-serif;
     text-transform:capitalize
 }
+
+
+.results{
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 26); 
+    text-shadow: 3px -2px rgb(25, 73, 207) ;
+    font-weight: bolder;
+    font-size: large;
+}
