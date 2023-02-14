@@ -108,12 +108,6 @@ gifSearch();
 
 
 
-function getRandom(response) {
-  let randomName = [];
-  randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
-  return randomName;
-
-}
 
 
 
@@ -123,10 +117,10 @@ const limit = `&limit=50`;
 let pokeNames = [];
 let randomPokeName = $(`#random-pokename`);
 let generatorURL =
-  `https://api.fungenerators.com/name/generate?category=pokemon` +
-  limit +
-  `&api_key=` +
-  APIKey;
+`https://api.fungenerators.com/name/generate?category=pokemon` +
+limit +
+`&api_key=` +
+APIKey;
 
 $.ajax({
   url: generatorURL,
@@ -136,17 +130,24 @@ $.ajax({
   let names = response.contents.names;
   console.log(names);
   for (let i = 0; i < names.length; i++)
-    if (pokeNames.includes(names[i])) {
-      return;
-    } else {
-      pokeNames.push(names[i]);
-    }
+  if (pokeNames.includes(names[i])) {
+    return;
+  } else {
+    pokeNames.push(names[i]);
+  }
   let nameDisplay = $(`<h1>`);
   nameDisplay.text(`Your pokename is` + ` ` + getRandom());
   randomPokeName.append(nameDisplay);
-
+  
 });
 
+function getRandom(response) {
+  let randomName = [];
+  randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
+  localStorage.setItem(`randomName`, randomName.toString())
+  return randomName;
+
+}
 
 
 //FORM for certificate//
