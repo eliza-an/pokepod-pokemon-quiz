@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="./assets/css/question-style.css" />
   </head>
 <body>
+  <audio id="myAudio">
+    <source src="./assets/music/Mikel, GameChops - Pokémon Gym.mp3" type="audio/mpeg">
+  </audio>
+  <button class="btn-success" onclick="playAudio()" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+      </path>
+    </svg>
+  </button>
+  <button class="btn-success" onclick="pauseAudio()" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-mute-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z">
+      </path>
+    </svg>
+  </button>
+
   <div id="questions" class="hide">
     <h2 id="question" class="text-center"></h2>
     <div class="btn-more">
@@ -21,6 +41,8 @@
     </div>
   </div>
 </div>
+
+<audio src="./assets/music/Mikel, GameChops - Pokémon Gym.mp3"></audio>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <!-----<script src="./assets/js/questions.js"></script>-->

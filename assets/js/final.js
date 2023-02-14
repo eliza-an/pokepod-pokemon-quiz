@@ -17,5 +17,12 @@ for (var i = 0; i < localStorage.length; i++) {
     window.localStorage.removeItem(`randomName`)
   }
 
-  
+
+ var inputval= nameinput.value
+
+ if (inputval=null){
+     document.getElementById("startBtn").disabled = true;
+ }else{   
+      document.getElementById("startBtn").disabled = false;
+}
 

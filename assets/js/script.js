@@ -1,3 +1,14 @@
+var audio = document.getElementById("myAudio"); 
+  
+function playAudio() { 
+  audio.play(); 
+} 
+
+function pauseAudio() { 
+  audio.pause(); 
+} 
+
+
 const question = document.getElementById("question");
 const answerForm = document.getElementById("answerForm");
 

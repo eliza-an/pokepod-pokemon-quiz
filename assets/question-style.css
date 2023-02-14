@@ -1,0 +1,119 @@
+.results {
+  color: black;
+}
+
+body {
+  background: url("./images/Pokemon-questions-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin:20px;
+  font-size: 20px;
+  width: 200px
+
+
+}
+
+.startBtn {
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 8px;
+  
+}
+
+a {
+  color: white;
+  padding: 15px;  
+   
+}
+
+
+.btn-more {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 19%;
+
+}
+
+#answerForm {
+  grid-column: 2 / span 1;
+  grid-row: 6 / span 1;
+  text-align: center;
+}
+
+#Pikachu{
+ border-radius: 5px;
+ background-color: rgb(197, 195, 64);
+ border: 1px solid  rgb(197, 195, 64) ;
+}
+
+#Bulbasaur{
+  border-radius: 5px;
+  background-color: rgb(64, 197, 93);
+  border: 1px solid  rgb(64, 197, 93) ;
+}
+
+#Squirtle{
+  border-radius: 5px;
+  background-color: ;
+  border: 1px solid rgb(64, 155, 197) ;
+}
+
+#Charmander{
+  border-radius: 5px;
+  background-color: rgb(197, 128, 64);
+  border: 1px solid rgb(197, 128, 64) ;
+}
+
+
+#questions{
+  font-family: 'DotGothic16', sans-serif;
+}
+
+#question{
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+/* 
+.choicescontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  ul li{
+    list-style-type: none;
+   display: inline;
+   padding-top: 9px;
+
+  }
+
+ */
+
+ @media screen and (max-width: 1150px) {
+  body {
+    background: url("./images/pokebig.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btn-more {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 19%;
+  }
+#answerForm {
+  margin-top: -10%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 4;
+  text-align: center;
+  display: block;
+}
+ }

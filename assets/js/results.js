@@ -1,3 +1,16 @@
+var audio = document.getElementById("myAudio"); 
+  
+function playAudio() { 
+  audio.play(); 
+  audio.volume = 0.05;
+
+} 
+
+function pauseAudio() { 
+  audio.pause(); 
+} 
+
+
 var pokemon = ""; //This needs to be result of quiz
 
 let pokemonName = $("#pokemon-name-heading");
@@ -6,14 +19,14 @@ let pokeIndex = $("#poke-index");
 let pokeAbility = $("#poke-ability");
 const urlParams = new URLSearchParams(window.location.search);
 const scores = JSON.parse(urlParams.get("scores"));
-console.log(scores);
+// console.log(scores);
 
 let gifReturn = $("#gif-return");
 
-var pikachuscore = scores.Pikachu;
-var bulbasaurscore = scores.Bulbasaur;
-var charmanderscore = scores.Charmander;
-var squirtlescore = scores.Squirtle;
+ var pikachuscore = scores.Pikachu;
+ var bulbasaurscore = scores.Bulbasaur;
+ var charmanderscore = scores.Charmander;
+ var squirtlescore = scores.Squirtle;
 
 if (
   pikachuscore > bulbasaurscore &&
@@ -197,4 +210,47 @@ if (pokemon === "bulbasaur") {
   mainImage.attr("src", "assets/images/charmander.png");
 } else {
   mainImage.attr("src", "assets/images/meowth.png");
+}
+
+
+//if-else for changing text on result 
+let resultText = $(".result-text");
+
+if (pokemon === "bulbasaur") {
+  resultText.text("You have a strong moral compass! You look to move through the world peacefully. You are good at helping others.");
+} else if (pokemon === "pikachu") {
+  resultText.text("You are a loyal friend who enjoys adventures! You can handle yourself in a battle, and your curiosity makes you a quick learner. ");
+} else if (pokemon === "squirtle") {
+  resultText.text("You are a calm and kind person! You will speak up for others in times of trouble. You often find that the simplest approach to a problem is the best.");
+} else if (pokemon === "charmander") {
+  resultText.text("You like the be in the middle of things! You know how to stand up for yourself but will do it politely. You prefer not to hide your emotions.");
+} else {
+  resultText.text("You are strong-willed and expressive! You work best in a team, and have are great at communication.");
+}
+
+
+//adding small images to cards
+let cardImage = $("#mini-image")
+//give card image an ID
+
+if (pokemon === "bulbasaur") {
+  cardImage.attr({
+    src: "assets/images/bulbasaur_mini.png",
+    alt: "bulbasaur"});
+} else if (pokemon === "pikachu") {
+  cardImage.attr({
+    src: "assets/images/bulbasaur_mini.png",
+    alt: "pikachu"});;
+} else if (pokemon === "squirtle") {
+  cardImage.attr({
+    src: "assets/images/bulbasaur_mini.png",
+    alt: "squirtle"});;
+} else if (pokemon === "charmander") {
+  cardImage.attr({
+    src: "assets/images/bulbasaur_mini.png",
+    alt: "charmander"});;
+} else {
+  cardImage.attr({
+    src: "assets/images/bulbasaur_mini.png",
+    alt: "meowth"});;
 }
