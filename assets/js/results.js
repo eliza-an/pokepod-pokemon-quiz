@@ -146,7 +146,6 @@ function getRandom(response) {
   randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
   localStorage.setItem(`randomName`, randomName.toString())
   return randomName;
-
 }
 
 
