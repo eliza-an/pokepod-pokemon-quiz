@@ -15,6 +15,17 @@ for (var i = 0; i < localStorage.length; i++) {
     appenddiv.appendChild(textsection);
     window.localStorage.removeItem(`debug`);
     window.localStorage.removeItem(`randomName`)
+
+if(value==="pikachu"){
+    cardImage.attr({
+        src: "assets/images/pikachu_mini.png",
+        alt: "pikachu"});;
+}else if (value=== "bulbasaur"){
+cardImage.attr({
+        src: "assets/images/bulbasaur_mini.png",
+        alt: "bulbasaur"});
+  }else if(value=){
+
   }
 
 
