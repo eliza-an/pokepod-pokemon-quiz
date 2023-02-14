@@ -9,8 +9,9 @@ for (var i = 0; i < localStorage.length; i++) {
   
     var list=[]
     list.push(value)
-    console.log(list)
-    const textsection= document.createElement("p");
+    console.log(list[0])
+ console.log( list[0].includes("pikachu"))
+        const textsection= document.createElement("p");
     const paratext = document.createTextNode(key + ": " + value);
     textsection.appendChild(paratext);
     
