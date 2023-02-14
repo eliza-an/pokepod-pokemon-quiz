@@ -1,3 +1,14 @@
+var audio = document.getElementById("myAudio"); 
+  
+function playAudio() { 
+  audio.play(); 
+} 
+
+function pauseAudio() { 
+  audio.pause(); 
+} 
+
+
 var pokemon = ""; //This needs to be result of quiz
 
 let pokemonName = $("#pokemon-name-heading");
@@ -6,42 +17,42 @@ let pokeIndex = $("#poke-index");
 let pokeAbility = $("#poke-ability");
 const urlParams = new URLSearchParams(window.location.search);
 const scores = JSON.parse(urlParams.get("scores"));
-console.log(scores);
+// console.log(scores);
 
 let gifReturn = $("#gif-return");
 
-var pikachuscore = scores.Pikachu;
-var bulbasaurscore = scores.Bulbasaur;
-var charmanderscore = scores.Charmander;
-var squirtlescore = scores.Squirtle;
+// var pikachuscore = scores.Pikachu;
+// var bulbasaurscore = scores.Bulbasaur;
+// var charmanderscore = scores.Charmander;
+// var squirtlescore = scores.Squirtle;
 
-if (
-  pikachuscore > bulbasaurscore &&
-  pikachuscore > charmanderscore &&
-  pikachuscore > squirtlescore
-) {
-  pokemon = "pikachu";
-} else if (
-  bulbasaurscore > pikachuscore &&
-  bulbasaurscore > charmanderscore &&
-  bulbasaurscore > squirtlescore
-) {
-  pokemon = "bulbasaur";
-} else if (
-  charmanderscore > pikachuscore &&
-  charmanderscore > bulbasaurscore &&
-  charmanderscore > squirtlescore
-) {
-  pokemon = "charmander";
-} else if (
-  squirtlescore > pikachuscore &&
-  squirtlescore > bulbasaurscore &&
-  squirtlescore > charmanderscore
-) {
-  pokemon = "squirtle";
-} else {
-  pokemon = "snorlax";
-}
+// if (
+//   pikachuscore > bulbasaurscore &&
+//   pikachuscore > charmanderscore &&
+//   pikachuscore > squirtlescore
+// ) {
+//   pokemon = "pikachu";
+// } else if (
+//   bulbasaurscore > pikachuscore &&
+//   bulbasaurscore > charmanderscore &&
+//   bulbasaurscore > squirtlescore
+// ) {
+//   pokemon = "bulbasaur";
+// } else if (
+//   charmanderscore > pikachuscore &&
+//   charmanderscore > bulbasaurscore &&
+//   charmanderscore > squirtlescore
+// ) {
+//   pokemon = "charmander";
+// } else if (
+//   squirtlescore > pikachuscore &&
+//   squirtlescore > bulbasaurscore &&
+//   squirtlescore > charmanderscore
+// ) {
+//   pokemon = "squirtle";
+// } else {
+//   pokemon = "snorlax";
+// }
 
 function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
