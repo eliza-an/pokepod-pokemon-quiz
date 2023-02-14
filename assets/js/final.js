@@ -19,10 +19,10 @@ for (var i = 0; i < localStorage.length-1; i++) {
     appenddiv.appendChild(textsection);
   }
 
-var inputval= nameinput.value
+// var inputval= nameinput.value
 
-if (inputval=null){
-    document.getElementById("startBtn").disabled = true;
-}else{   
-     document.getElementById("startBtn").disabled = false;
-}
+// if (inputval=null){
+//     document.getElementById("startBtn").disabled = true;
+// }else{   
+//      document.getElementById("startBtn").disabled = false;
+// }
