@@ -83,7 +83,7 @@ function pokemonSearch() {
     pokeAbility.append(apiAbility);
 
 
-localStorage.setItem("Pokemon", pokemon )
+localStorage.setItem("Pokemon", pokemon.toString() )
 localStorage.setItem("Index Number", indexNo )
 localStorage.setItem("Pokemon Type", pokemonType )
 localStorage.setItem("Ability", pokemonAbility )

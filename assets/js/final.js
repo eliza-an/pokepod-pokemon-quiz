@@ -9,8 +9,9 @@ for (var i = 0; i < localStorage.length; i++) {
   
     var list=[]
     list.push(value)
-    console.log(list[0])
- console.log( list[0].includes("pikachu"))
+   console.log(list[2])
+    list[0].includes("bulbasaur")===true
+
         const textsection= document.createElement("p");
     const paratext = document.createTextNode(key + ": " + value);
     textsection.appendChild(paratext);
@@ -20,19 +21,19 @@ for (var i = 0; i < localStorage.length; i++) {
     window.localStorage.removeItem(`debug`);
     window.localStorage.removeItem(`randomName`)
 
-if(value[3]==="pikachu"){
+if(list[0].includes("pikachu")===true){
     cardImage.attr({
         src: "assets/images/pikachu_mini.png",
         alt: "pikachu"});;
-}else if (value[3]=== "bulbasaur"){
+}else if (list[0].includes("bulbasaur")===true){
 cardImage.attr({
         src: "assets/images/bulbasaur_mini.png",
         alt: "bulbasaur"});
-  }else if(value[3]==="squirtle"){
+  }else if(list[0].includes("squirtle")===true){
     cardImage.attr({
         src: "assets/images/squirtle_mini.png",
         alt: "squirtle"});;
-  }else if(value[3]==="charmander"){
+  }else if(list[0].includes("charmander")===true){
     cardImage.attr({
         src: "assets/images/charmander_mini.png",
         alt: "charmander"});;
@@ -40,4 +41,7 @@ cardImage.attr({
     cardImage.attr({
       src: "assets/images/meowth_mini.png",
       alt: "meowth"});;
-  }}
+  }  
+  
+}
+
