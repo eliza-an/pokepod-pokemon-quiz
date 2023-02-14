@@ -19,6 +19,8 @@
 
 
     <button type="button" class="btn btn-primary results" data-toggle="modal" data-target="#exampleModal"> Previous Results</button>
+    
+
 
 <!--Modal to display previous results-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -93,6 +95,10 @@
   </div>
 </div>
 
+<audio id="myAudio">
+  <source src="./assets/music/Pokémon - Pokémon Theme.mp3" type="audio/mpeg">
+</audio>
+
 
 <div class="pdf-form">
 <form>
@@ -100,7 +106,7 @@
     <input type="text" id="name" placeholder="Enter your name">
   </form>
   <br>
-  <button id="download-btn">Enter your Name for your PokeCertificate! </button>
+  <button onclick="playAudio()" id="download-btn">Enter your Name for your PokeCertificate! </button>
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
