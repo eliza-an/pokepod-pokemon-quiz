@@ -1,3 +1,17 @@
+const button = $("#mute-button");
+const icon = $("#icon");
+const audio = $("audio");
+
+button.on("click", function() {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    
+  } else {
+    audio.pause();
+  }
+});
+
 var pokemon = ""; //This needs to be result of quiz
 
 let pokemonName = $("#pokemon-name-heading");

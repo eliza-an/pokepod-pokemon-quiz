@@ -1,3 +1,9 @@
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+});
+
 const question = document.getElementById("question");
 const answerForm = document.getElementById("answerForm");
 
