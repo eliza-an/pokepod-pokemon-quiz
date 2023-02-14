@@ -91,10 +91,10 @@ function pokemonSearch() {
 
 
 
-localStorage.setItem("Pokemon", pokemon.toString() )
+//localStorage.setItem("Pokemon", pokemon.toString() )
 
     // stores chosen information to local storage to be displayed on results page
-localStorage.setItem("Pokemon", pokemon )
+localStorage.setItem("Pokemon", pokemon)
 
 localStorage.setItem("Index Number", indexNo )
 localStorage.setItem("Pokemon Type", pokemonType )
