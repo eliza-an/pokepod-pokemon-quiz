@@ -144,7 +144,7 @@ $.ajax({
 function getRandom(response) {
   let randomName = [];
   randomName.push(pokeNames[Math.floor(Math.random() * pokeNames.length)]);
-  localStorage.setItem(`randomName`, randomName.toString())
+  localStorage.setItem(`Your Pokemon Name`, randomName.toString())
   return randomName;
 
 }

@@ -130,4 +130,7 @@ body {
     border: 8px solid rgb(255, 0, 0); */
 }
 
-
+.card-body{
+    font-family: 'DotGothic16', sans-serif;
+    text-transform:capitalize
+}
