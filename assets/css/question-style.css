@@ -40,26 +40,26 @@ a {
 
 #Pikachu {
   border-radius: 5px;
-  background-color: ;
-  border: 1px solid rgb(64, 155, 197);
-}
-
-#Bulbasaur {
-  border-radius: 5px;
   background-color: rgb(197, 195, 64);
   border: 1px solid rgb(197, 195, 64);
 }
 
-#Squirtle {
+#Bulbasaur {
   border-radius: 5px;
   background-color: rgb(64, 197, 93);
   border: 1px solid rgb(64, 197, 93);
 }
 
+#Squirtle {
+  border-radius: 5px;
+  background-color: ;
+  border: 1px solid rgb(64, 155, 197);
+}
+
 #Charmander {
   border-radius: 5px;
-  background-color: rgb(197, 128, 64);
-  border: 1px solid rgb(197, 128, 64);
+  background-color: rgb(233, 55, 55);
+  border: 1px solid rgb(233, 55, 55);
 }
 
 #questions {
