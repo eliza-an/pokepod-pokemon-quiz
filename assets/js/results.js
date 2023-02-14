@@ -1,3 +1,4 @@
+// plays audio when clicked and reduces volume
 var audio = document.getElementById("myAudio"); 
   
 function playAudio() { 
@@ -10,9 +11,11 @@ function pauseAudio() {
   audio.pause(); 
 } 
 
-
+// empty string to hold result of the quiz
 var pokemon = ""; //This needs to be result of quiz
 
+
+// jquery to get elements by id and assign to variable
 let pokemonName = $("#pokemon-name-heading");
 let pokeType = $("#poke-type");
 let pokeIndex = $("#poke-index");
@@ -21,6 +24,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const scores = JSON.parse(urlParams.get("scores"));
 // console.log(scores);
 
+
 let gifReturn = $("#gif-return");
 
  var pikachuscore = scores.Pikachu;
@@ -28,6 +32,7 @@ let gifReturn = $("#gif-return");
  var charmanderscore = scores.Charmander;
  var squirtlescore = scores.Squirtle;
 
+// Condition to test scores for each possible result and selects final result
 if (
   pikachuscore > bulbasaurscore &&
   pikachuscore > charmanderscore &&
@@ -56,6 +61,8 @@ if (
   pokemon = "snorlax";
 }
 
+
+// API call to retrieve and store information relevant to selected pokemon
 function pokemonSearch() {
   var queryURL = "https://pokeapi.co/api/v2/pokemon/" + pokemon;
   $.ajax({
@@ -83,7 +90,12 @@ function pokemonSearch() {
     pokeAbility.append(apiAbility);
 
 
+
 localStorage.setItem("Pokemon", pokemon.toString() )
+
+    // stores chosen information to local storage to be displayed on results page
+localStorage.setItem("Pokemon", pokemon )
+
 localStorage.setItem("Index Number", indexNo )
 localStorage.setItem("Pokemon Type", pokemonType )
 localStorage.setItem("Ability", pokemonAbility )
@@ -95,6 +107,7 @@ localStorage.setItem("Ability", pokemonAbility )
 }
 pokemonSearch();
 
+// API call to retrieve a pokemon gif based on final result name
 let gifTag = $("<img>");
 function gifSearch() {
   queryURL =
@@ -124,7 +137,7 @@ gifSearch();
 
 
 
-
+// API call to create an array of randomly generated pokemon names and selects one randomly to display
 const APIKey = `qEfp8gLbO9z879S740uTEQeF`;
 const limit = `&limit=50`;
 let pokeNames = [];
@@ -197,7 +210,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
   doc.save("form.pdf");
 });
 
-//if-else for changing main result picture:
+// Conditional statement to change main result picture:
 let mainImage = $("#result-pokemon");
 
 if (pokemon === "bulbasaur") {
@@ -213,7 +226,7 @@ if (pokemon === "bulbasaur") {
 }
 
 
-//if-else for changing text on result 
+// Conditional to display corresponding text on result 
 let resultText = $(".result-text");
 
 if (pokemon === "bulbasaur") {

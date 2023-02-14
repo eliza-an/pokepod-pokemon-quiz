@@ -1,13 +1,16 @@
+/* changes text colour of results element to black */
 .results {
   color: black;
 }
 
+/* Changes background image and styles size */
 body {
   background: url("../images/Pokemon-questions-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Displays button as inline-block, chamges font-size, and sets margin and width properties  */
 .btn-primary {
   display: inline-block;
   margin: 20px;
@@ -15,29 +18,34 @@ body {
   width: 200px;
 }
 
+/* Sets border to red, with a red background and rounds off the border radius */
 .startBtn {
   border: 1px solid red;
   background-color: red;
   border-radius: 8px;
 }
 
+/* Sets links to display with white text and adds padding */
 a {
   color: white;
   padding: 15px;
 }
 
+/* Displays class as grid of 3 columns with a margin on top */
 .btn-more {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 19%;
 }
 
+/* Sets grid area */
 #answerForm {
   grid-column: 2 / span 1;
   grid-row: 6 / span 1;
   text-align: center;
 }
 
+/* Button colours */
 #Pikachu {
   border-radius: 5px;
   background-color: rgb(197, 195, 64);
@@ -62,6 +70,7 @@ a {
   border: 1px solid rgb(233, 55, 55);
 }
 
+/* Question font and placement */
 #questions {
   font-family: "DotGothic16", sans-serif;
 }
@@ -71,24 +80,7 @@ a {
   font-size: 40px;
 }
 
-/* 
-.choicescontainer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-  }
-
-  ul li{
-    list-style-type: none;
-   display: inline;
-   padding-top: 9px;
-
-  }
-
- */
+/* Media queries for smaller than 1150 px width */
 
 @media screen and (max-width: 1150px) {
   body {

@@ -6,16 +6,13 @@ body {
 }
 
 
-
-
-
-
-
 /* text inside jumbotron */
 #start-heading {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
     font-family: 'DotGothic16', sans-serif; 
     color: rgb(255, 255, 26); 
     text-shadow: 4px -2px rgb(25, 73, 207) ;
@@ -61,11 +58,6 @@ body {
     font-weight: bolder;
     font-size: large;
 }
-
-#startBtn{
- margin: auto !important;
-}
-
 
 
 

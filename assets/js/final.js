@@ -3,9 +3,10 @@
 for (var i = 0; i < localStorage.length; i++) {
 
     var key = localStorage.key(i);
-  
+
     // use key name to retrieve the corresponding value
     var value = localStorage.getItem(key);
+
   
     var list=[]
     list.push(value)
@@ -13,13 +14,15 @@ for (var i = 0; i < localStorage.length; i++) {
     list[0].includes("bulbasaur")===true
 
         const textsection= document.createElement("p");
+
     const paratext = document.createTextNode(key + ": " + value);
     textsection.appendChild(paratext);
-    
+
     const appenddiv = document.getElementById("div1");
     appenddiv.appendChild(textsection);
     window.localStorage.removeItem(`debug`);
     window.localStorage.removeItem(`randomName`)
+
 
 if(list[0].includes("pikachu")===true){
     cardImage.attr({
@@ -43,5 +46,16 @@ cardImage.attr({
       alt: "meowth"});;
   }  
   
+
+}
+
+
+var inputval = nameinput.value
+
+if (inputval = null) {
+    document.getElementById("startBtn").disabled = true;
+} else {
+    document.getElementById("startBtn").disabled = false;
+
 }
 

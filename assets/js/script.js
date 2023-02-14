@@ -1,3 +1,5 @@
+
+// Allows audio to play on button click
 var audio = document.getElementById("myAudio"); 
   
 function playAudio() { 
@@ -8,10 +10,12 @@ function pauseAudio() {
   audio.pause(); 
 } 
 
-
+// assigns element matching id to variable
 const question = document.getElementById("question");
 const answerForm = document.getElementById("answerForm");
 
+
+// Nested arrays/objects that hold questions and possible answers
 let currentQuestion = 0;
 const questions = [
   {
@@ -161,6 +165,7 @@ const questions = [
   },
 ];
 
+// Initializes scores for each possible result
 let scores = {
   Pikachu: 0,
   Bulbasaur: 0,
@@ -168,6 +173,8 @@ let scores = {
   Charmander: 0,
 };
 
+
+// function to create buttons for each possible answer, display them on the button, then iterates score and renders the next question and possible answers
 function renderQuestion() {
   const currentAnswers = questions[currentQuestion].answers;
   answerForm.innerHTML = "";
@@ -181,7 +188,7 @@ function renderQuestion() {
     button.textContent = answer.text;
     button.id = answer.dataIndex;
 
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function (event) {
       event.preventDefault();
       const selectedIndex = questions[currentQuestion].answers.findIndex(
         (a) => a.text === this.textContent
@@ -207,36 +214,3 @@ function renderQuestion() {
 }
 
 renderQuestion();
-/*
-const launch = $(`#launchScreen`);
-const startBtn = $(`#startBtn`);
-const question = $(`#question`);
-const options = $(`#options`);
-let answerA = $(`.answerA`);
-let answerB = $(`.answerB`);
-let answerC = $(`.answerC`);
-let answerD = $(`.answerD`);
-
-let snorlax = 0;
-let pikachu = 0;
-let bulbasaur = 0;
-let squirtle = 0;
-let charmander = 0;
-
-answerA.on(`click`, nextQuestion());
-answerB.on(`click`, nextQuestion());
-answerC.on(`click`, nextQuestion());
-answerD.on(`click`, nextQuestion());
-
-function nextQuestion() {
-
-    let x = 1
-
-    const questionTitle = $(`#qTitle` + x);
-    let questionHeader = $(`<h2>`)
-    questionHeader.attr("id", "qTitle" + x)
-    questionHeader.text(questionsArray[x].question);
-    questionTitle.append(questionHeader)
-    x++
-}
-*/
