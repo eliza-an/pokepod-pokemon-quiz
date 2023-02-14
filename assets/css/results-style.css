@@ -8,7 +8,7 @@ https://fonts.google.com/share?selection.family=DotGothic16|Luckiest+Guy|Russo+O
 
 
 body {
-    background: url("./images/pokebig.png");
+    background: url("../images/pokebig.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -126,4 +126,7 @@ body {
     border: 8px solid rgb(255, 0, 0); */
 }
 
-
+.card-body{
+    font-family: 'DotGothic16', sans-serif;
+    text-transform:capitalize
+}
