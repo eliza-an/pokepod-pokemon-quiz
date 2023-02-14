@@ -2,6 +2,8 @@ var audio = document.getElementById("myAudio");
   
 function playAudio() { 
   audio.play(); 
+  audio.volume = 0.05;
+
 } 
 
 function pauseAudio() { 
