@@ -1,7 +1,7 @@
 
 
 // iterate localStorage
-for (var i = 0; i < localStorage.length-1; i++) {
+for (var i = 0; i < localStorage.length; i++) {
 
     // set iteration key name
     var key = localStorage.key(i);
@@ -17,6 +17,7 @@ for (var i = 0; i < localStorage.length-1; i++) {
     
     const appenddiv = document.getElementById("div1");
     appenddiv.appendChild(textsection);
+    window.localStorage.removeItem(`debug`);
   }
 
 var inputval= nameinput.value
