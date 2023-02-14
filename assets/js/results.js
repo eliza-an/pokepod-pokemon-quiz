@@ -90,8 +90,12 @@ function pokemonSearch() {
     pokeAbility.append(apiAbility);
 
 
+
+localStorage.setItem("Pokemon", pokemon.toString() )
+
     // stores chosen information to local storage to be displayed on results page
 localStorage.setItem("Pokemon", pokemon )
+
 localStorage.setItem("Index Number", indexNo )
 localStorage.setItem("Pokemon Type", pokemonType )
 localStorage.setItem("Ability", pokemonAbility )
@@ -242,24 +246,3 @@ if (pokemon === "bulbasaur") {
 let cardImage = $("#mini-image")
 //give card image an ID
 
-if (pokemon === "bulbasaur") {
-  cardImage.attr({
-    src: "assets/images/bulbasaur_mini.png",
-    alt: "bulbasaur"});
-} else if (pokemon === "pikachu") {
-  cardImage.attr({
-    src: "assets/images/bulbasaur_mini.png",
-    alt: "pikachu"});;
-} else if (pokemon === "squirtle") {
-  cardImage.attr({
-    src: "assets/images/bulbasaur_mini.png",
-    alt: "squirtle"});;
-} else if (pokemon === "charmander") {
-  cardImage.attr({
-    src: "assets/images/bulbasaur_mini.png",
-    alt: "charmander"});;
-} else {
-  cardImage.attr({
-    src: "assets/images/bulbasaur_mini.png",
-    alt: "meowth"});;
-}
