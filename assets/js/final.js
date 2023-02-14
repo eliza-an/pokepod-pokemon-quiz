@@ -24,16 +24,16 @@ if(value==="pikachu"){
 cardImage.attr({
         src: "assets/images/bulbasaur_mini.png",
         alt: "bulbasaur"});
-  }else if(value=){
-
-  }
-
-
- var inputval= nameinput.value
-
- if (inputval=null){
-     document.getElementById("startBtn").disabled = true;
- }else{   
-      document.getElementById("startBtn").disabled = false;
-}
-
+  }else if(value==="squirtle"){
+    cardImage.attr({
+        src: "assets/images/squirtle_mini.png",
+        alt: "squirtle"});;
+  }else if(value==="charmander"){
+    cardImage.attr({
+        src: "assets/images/charmander_mini.png",
+        alt: "charmander"});;
+  } else {
+    cardImage.attr({
+      src: "assets/images/meowth_mini.png",
+      alt: "meowth"});;
+  }}
