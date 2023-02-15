@@ -139,3 +139,13 @@ body {
     font-weight: bolder;
     font-size: large;
 }
+@media screen and (max-width: 1150px) {
+    body {
+        background: url("../images/Mobileimage.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        height: 100%;
+      }
+}

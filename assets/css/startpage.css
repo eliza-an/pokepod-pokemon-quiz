@@ -73,6 +73,17 @@ footer p {
     background-color: rgb(2, 167, 2);
 }
 
+@media screen and (max-width: 1150px) {
+    body {
+        background: url("../images/Mobileimage.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        height: 100%;
+      }
+}
+
 
 
 
