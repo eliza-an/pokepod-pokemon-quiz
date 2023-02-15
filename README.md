@@ -7,7 +7,7 @@ This project is a personality quiz, where you can find out your inner Pokemon.
 
 ## Usage
 
-Wesbite link: https://eliza-an.github.io/pokepod-pokemon-quiz/ 
+Website link: https://eliza-an.github.io/pokepod-pokemon-quiz/ 
 
 On loading the quiz in your browser, click the start button on the title page to begin.
 ![start screen](pok%C3%A9Quiz-startscreen.png)
