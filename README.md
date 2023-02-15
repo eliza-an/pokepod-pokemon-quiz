@@ -12,7 +12,7 @@ N/A
 
 ## Usage
 
-Wesbite link: https://eliza-an.github.io/pokepod-pokemon-quiz/ 
+Website link: https://eliza-an.github.io/pokepod-pokemon-quiz/ 
 
 On loading the quiz in your browser, click the start button on the title page to begin. Then simply answer all nine questions and then you will be presented with your results. 
 
