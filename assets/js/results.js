@@ -55,7 +55,7 @@ if (
 ) {
   pokemon = "squirtle";
 } else {
-  pokemon = "snorlax";
+  pokemon = "meowth";
 }
 
 // API call to retrieve and store information relevant to selected pokemon

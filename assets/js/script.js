@@ -28,10 +28,10 @@ const questions = [
     ],
   },
   {
-    text: "What's your favourite colour?",
+    text: "Which colour do you prefer?",
     answers: [
-      { text: "green", value: 0, dataIndex: "Bulbasaur" },
-      { text: "yellow", value: 0, dataIndex: "Pikachu" },
+      { text: "Green", value: 0, dataIndex: "Bulbasaur" },
+      { text: "Yellow", value: 0, dataIndex: "Pikachu" },
       { text: "Red", value: 0, dataIndex: "Charmander" },
       { text: "Blue", value: 0, dataIndex: "Squirtle" },
     ],
