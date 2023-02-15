@@ -141,6 +141,12 @@ body {
 }
 
 
+.playagain{
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+}
+
+
 /* media queries */
 @media screen and (max-width: 1150px) {
     body {
