@@ -40,8 +40,9 @@ a {
 .btn-more {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 19%;
+  margin-top: 150px;
 }
+
 
 /* Sets grid area */
 #answerForm {
@@ -83,7 +84,9 @@ a {
 #question {
   margin-top: 50px;
   font-size: 40px;
+  margin: 40px;
 }
+
 
 /* Media queries for smaller than 1150 px width */
 
