@@ -3,6 +3,11 @@
   color: black;
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 /* Changes background image and styles size */
 body {
   background: url("../images/Pokemon-questions-bg.png");
@@ -84,10 +89,18 @@ a {
 
 @media screen and (max-width: 1150px) {
   body {
-    background: url("/assets/images/pokebig.png");
+    background: url("../images/Mobileimage.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+ 
   }
+
+
+  html, body {
+    margin: 0;
+    height: 100%;
+}
   .btn-more {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
