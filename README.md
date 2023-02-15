@@ -29,6 +29,18 @@ To view previous results, click the 'previous results' button to load the modal.
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 - https://getbootstrap.com/docs/4.0/components/buttons/
 
+
+links to the pokemon images used: 
+    
+    https://www.freeiconspng.com/img/18167 Download Pokemon Png HQ Pictures
+    https://www.freeiconspng.com/img/18160" Get Pokemon Png Pictures
+    https://www.freeiconspng.com/img/18161 Render pokemon png
+    https://www.freeiconspng.com/img/18185 Download Pokemon Latest Version 2018      
+    https://www.freeiconspng.com/img/18184 Png Pokemon Designs
+    https://www.freeiconspng.com/img/18188 Png Pokemon Download High quality
+    https://www.freeiconspng.com/img/24004 flareon pokemon png
+    https://www.pngegg.com/en/png-mokdc Snorlax Pokemon
+    https://www.freeiconspng.com/img/45331 Pokemon ball png
 ## License
 
 Please refer to the licence in the repo.
