@@ -139,6 +139,9 @@ body {
     font-weight: bolder;
     font-size: large;
 }
+
+
+/* media queries */
 @media screen and (max-width: 1150px) {
     body {
         background: url("../images/Mobileimage.png");
@@ -147,5 +150,22 @@ body {
         background-position: center;
         margin: 0;
         height: 100%;
-      }
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #result-pokemon {
+        font-family: 'DotGothic16', sans-serif;
+        background-color: rgba(241, 240, 222, 0.7);
+        /* border: 12px solid yellow; */
+        border-radius: 15px;
+        max-width: 200px;
+        
+    
+    }
+
+    #gif-return {
+        display: block;
+    }
 }
