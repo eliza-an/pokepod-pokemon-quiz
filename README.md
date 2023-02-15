@@ -47,11 +47,11 @@ The results page uses the PokeAPI to return statistics related to the result pok
 - https://forum.freecodecamp.org/t/solved-center-btn-group-super-easy-solution/160504
 - https://stackoverflow.com/questions/43044598/how-to-align-button-group-in-the-centre-html-css
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 - https://getbootstrap.com/docs/4.0/components/buttons/
 
 
 links to the pokemon images used:  
+https://www.pngwing.com/en/search?q=pokemon Transparent Pokemon PNGs
 https://www.freeiconspng.com/img/18167  Download Pokemon Png HQ Pictures
 https://www.freeiconspng.com/img/18160  Get Pokemon Png Pictures
 https://www.freeiconspng.com/img/18161  Render pokemon png
