@@ -20,6 +20,27 @@ To print your certifcate, just submit your name and click the button.
 
 To view previous results, click the 'previous results' button to load the modal.
 
+## Development
+
+This application was structured in HTML, customised in CSS and made functional in JavaScript. We used components from Bootstrap and Google Fonts. Local storage is used to store the user's result and then display the previous result. 
+
+The results page uses the PokeAPI to return statistics related to the result pokemon. We also use the Giphy API to return a gif of that pokemon. Thirdly there is the FunGenerator API which returns a pokéname - this is a blended name of existing pokemon.
+
+
+### Potential future developments:
+
+
+- Currently the quiz result returns of one of five possible pokémon; In the future it could expand to include additional pokemon as possible results, depending on the availability of corresponding gifs from the Giphy API.
+
+- Currently the quiz has nine questions; While this feels like a good length, it would be possible to add additional questions.
+
+- Currently the results page of the quiz provides the user with a Pokéname which is randomly generated via API; In future we could concatenate the user's name with the Pokename to create a more customised name. 
+
+- Currently the previous results modal displays the most recent result; This could be expanded to show multiple most recent results.
+
+- Currently this quiz uses Pokémon from Generation 1 - the original 150 pokemon available when the game was first released; In future we could build a quiz for other generations of pokemon.
+
+
 ## Credits
 
 - https://developers.giphy.com/docs/api/
